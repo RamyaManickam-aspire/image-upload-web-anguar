@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form (submit)="onFileUpload($event)" id="myForm" enctype="multipart/form-data" class="border p-4 shadow-sm rounded">
+        <div class="mb-3">
+          <label for="fileInput" class="form-label">Upload File</label>
+          <input type="file" class="form-control" id="fileInput" (change)="onFileSelected($event)" />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Upload</button>
+      </form>
+    </div>
+  </div>
+</div>
