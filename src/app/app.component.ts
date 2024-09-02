@@ -23,7 +23,7 @@ export class AppComponent {
       formData.append('file', this.selectedFile);
       this.http
         .post(
-          'https://image-upload-node-server-o7yeawi66q-uc.a.run.app//upload',
+          'https://image-upload-node-server-o7yeawi66q-uc.a.run.app/upload',
           formData
         )
         .subscribe((response) => {
